@@ -13,6 +13,10 @@ public class Vettura extends Veicolo{
         this.tipologia = tipologia;
     }
 
+    public String getTipologia(){
+        return tipologia;
+    }
+
     @Override
     public String toString(){
         return super.toString()+"\nTipologia: "+tipologia;

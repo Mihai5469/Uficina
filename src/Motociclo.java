@@ -13,6 +13,10 @@ public class Motociclo extends Veicolo{
         this.cilindrata = cilindrata;
     }
 
+    public int getCilindrata(){
+        return cilindrata;
+    }
+
     @Override
     public String toString(){
         return super.toString()+"\nCilindrata: "+cilindrata;

@@ -16,6 +16,27 @@ public class Veicolo {
         this.guasto = guasto;
     }
 
+    public String getStato(){
+        if(guasto){
+            return "Il veicolo e guasto";
+        }
+        return "Il veicolo non e guasto";
+    }
+    public boolean getGuasto(){
+        return guasto;
+    }
+
+    public String getTarga(){
+        return targa;
+    }
+    public String getModello(){
+        return modello;
+    }
+
+    public void setGuasto(boolean guasto){
+        this.guasto = guasto;
+    }
+
     @Override
     public String toString(){
         return "Targa: " + targa +"\nModello: " + modello +"\nGuasto: " + guasto;
