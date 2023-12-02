@@ -16,22 +16,22 @@ public class Officina {
         if(veicolo instanceof Vettura){
             veicolo.setGuasto(false);
 
-            if(((Vettura) veicolo).getTipologia() == "utilitaria"){
+            if( ((Vettura) veicolo).equals("utilitaria")){
                 return 500;
             }
-            else if(((Vettura) veicolo).getTipologia() == "station wagon"){
+            else if(((Vettura) veicolo).equals("station wagon")){
                 return 700;
             }
-            else if(((Vettura) veicolo).getTipologia() == "SUV"){
+            else if(((Vettura) veicolo).getTipologia().equals("SUV")){
                 return 1000;
             }
 
 
         }
-        else if(veicolo instanceof Motociclo){
+        else if(veicolo instanceof Motociclo) {
             veicolo.setGuasto(false);
 
-            switch (((Motociclo) veicolo).getCilindrata()){
+            switch (((Motociclo) veicolo).getCilindrata()) {
                 case 125:
                     return 50;
                 case 600:
@@ -40,8 +40,8 @@ public class Officina {
                 case 1000:
                     return 500;
             }
-
         }
+
         return -1;
     }
 }

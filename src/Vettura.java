@@ -6,7 +6,7 @@
  */
 
 public class Vettura extends Veicolo{
-    private String tipologia;
+    private final String tipologia;
 
     Vettura(String targa, String modello, boolean guasto, String tipologia){
         super(targa, modello, guasto);
@@ -15,6 +15,10 @@ public class Vettura extends Veicolo{
 
     public String getTipologia(){
         return tipologia;
+    }
+
+    public boolean tipo(String tipologia){
+        return this.tipologia.equals(tipologia);
     }
 
     @Override

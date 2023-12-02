@@ -10,7 +10,7 @@ public class Main {
         Officina o = new Officina();
 
         Vettura v1 = new Vettura("vet1", "Mercedes", false, "utilitaria");
-        Vettura v2 = new Vettura("vet2", "Mercedes", false, "utilitaria");
+        Vettura v2 = new Vettura("vet2", "Mercedes", true, "utilitaria");
 
         Motociclo m1 = new Motociclo("mot1","Aprilia", true, 125);
 
@@ -24,6 +24,6 @@ public class Main {
             System.out.println(veicoli[i].getTarga());
         }
 
-        System.out.println("Il prezzo della riparazione: "+o.ripara(v1));
+        System.out.println("Il prezzo della riparazione: "+o.ripara(v2));
     }
 }
