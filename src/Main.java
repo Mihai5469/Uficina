@@ -14,15 +14,15 @@ public class Main {
         Motociclo m1 = new Motociclo("mot1","Aprilia", true, 125);
 
 
-        Veicolo[] veicoli = new Veicolo[3];
-        veicoli[0] = v1;
-        veicoli[1] = v2;
-        veicoli[2] = m1;
+        Veicolo[] veicoli = {v1, v2, m1};
+
 
         for(int i = 0; i <3; i++){
             System.out.println(veicoli[i].getTarga());
+            System.out.println("Guasto: " +veicoli[i].getGuasto());
+            System.out.println("Il prezzo della riparazione: "+o.ripara(veicoli[i]));
         }
 
-        System.out.println("Il prezzo della riparazione: "+o.ripara(m1));
+
     }
 }
