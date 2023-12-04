@@ -16,10 +16,10 @@ public class Officina {
         if(veicolo instanceof Vettura){
             veicolo.setGuasto(false);
 
-            if( ((Vettura) veicolo).equals("utilitaria")){
+            if( ((Vettura) veicolo).getTipologia().equals("utilitaria")){
                 return 500;
             }
-            else if(((Vettura) veicolo).equals("station wagon")){
+            else if(((Vettura) veicolo).getTipologia().equals("station wagon")){
                 return 700;
             }
             else if(((Vettura) veicolo).getTipologia().equals("SUV")){

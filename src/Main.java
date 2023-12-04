@@ -1,5 +1,4 @@
 /**
- *
  * @author Mihai Iachimovschi
  * @version 28/11/2023
  */
@@ -24,6 +23,6 @@ public class Main {
             System.out.println(veicoli[i].getTarga());
         }
 
-        System.out.println("Il prezzo della riparazione: "+o.ripara(v2));
+        System.out.println("Il prezzo della riparazione: "+o.ripara(m1));
     }
 }
